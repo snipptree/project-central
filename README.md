@@ -1,10 +1,10 @@
 # snipptree
 
-## ssh into instance
-ssh -i "snipptree.pem" ec2-user@3.6.67.90
+## ssh into instance (Ubuntu)
+ssh -i "snipptree.pem" ubuntu@ec2-3-109-101-144.ap-south-1.compute.amazonaws.com
 
 ## copy project to ec2
-scp -r -i "/Users/vasanthkorada/Desktop/SnippTree/assets/snipptree.pem" /Users/vasanthkorada/Desktop/SnippTree/backend/sniptree ec2-user@3.6.67.90:/home/ec2-user/
+scp -r -i "/Users/vasanthkorada/Desktop/SnippTree/assets/snipptree.pem" ./snippetProd ubuntu@3.109.101.144:/home/ubuntu/    
 
 ## set go path on ec2
 export PATH=$PATH:/usr/local/go/bin
