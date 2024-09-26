@@ -1,8 +1,9 @@
-# !/bin/bash
+#!/bin/bash
 
 echo "Updating snipptree project-central..."
 git fetch --all
-git pull
+git checkout main  # Ensure we are on the main branch
+git pull --rebase
 echo "snipptree project-central updated successfully!"
 
 # List of repositories to update
@@ -15,9 +16,14 @@ for repo in "${repos[@]}"; do
   # Navigate to the repo directory
   cd ../$repo
   
-  # Fetch all branches and pull the latest changes
+  # Fetch all branches
   git fetch --all
-  git pull
+  
+  # Checkout to the main branch before pulling
+  git checkout main
+  
+  # Pull the latest changes from the remote main branch with rebase
+  git pull --rebase origin main
   
   # Navigate back to the project-central directory
   cd -
