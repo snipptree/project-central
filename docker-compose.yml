@@ -51,6 +51,8 @@ services:
     deploy:
       mode: replicated
       replicas: 1
+    ports:
+      - "8084:80"
     environment:
       MAIL_DOMAIN: localhost
       MAIL_HOST: mailhog
