@@ -6,14 +6,14 @@ USER="ubuntu"
 HOST="43.204.39.37"
 DESTINATION="/home/ubuntu/"
 
-# List of files to copy
+# Define the paths for the binaries in their respective folders
 FILES=(
-    "brokerApp"
-    "snippetApp"
-    "authApp"
-    "loggerServiceApp"
-    "communicationApp"
-    "docker-compose.yml"
+    "../broker-service/brokerApp"
+    "../snippet-service/snippetApp"
+    "../authentication-service/authApp"
+    "../logger-service/loggerServiceApp"
+    "../comm-service/communicationApp"
+    "./docker-compose.yml"
 )
 
 # Loop through the files and copy them
