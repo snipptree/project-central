@@ -12,7 +12,7 @@ Step 4:
         - Run sh deployment/scripts/transfer_docker_files.sh
 Step 5:
     SSH into EC2 instance
-        - ssh -i /Users/vasanthkorada/Desktop/SnippTree/assets/snipptree.pem ubuntu@43.204.39.37
+        - ssh -i /Users/vasanth/Desktop/SnippTree/assets/snipptree.pem ubuntu@43.204.39.37
 Step 6: 
     Build and Run Docker in EC2
         - docker-compose down

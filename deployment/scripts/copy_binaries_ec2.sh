@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define variables
-KEY="/Users/vasanthkorada/Desktop/SnippTree/assets/snipptree.pem"
+KEY="/Users/vasanth/Desktop/SnippTree/assets/snipptree.pem"
 USER="ubuntu"
 HOST="43.204.39.37"
 DESTINATION="/home/ubuntu/"

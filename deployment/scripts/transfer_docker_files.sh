@@ -3,7 +3,7 @@
 # Define variables
 EC2_USER="ubuntu"
 EC2_IP="43.204.39.37"
-PEM_FILE="/Users/vasanthkorada/Desktop/SnippTree/assets/snipptree.pem"
+PEM_FILE="/Users/vasanth/Desktop/SnippTree/assets/snipptree.pem"
 
 # Dockerfile paths on local machine
 BROKER_DOCKERFILE="../broker-service/broker-service.dockerfile"
